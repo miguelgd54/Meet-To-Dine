@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Image, Button, StyleSheet, Text, View } from 'react-native';
+import { Image, Button, StyleSheet, Text, View, StatusBar } from 'react-native';
 import { AuthSession } from 'expo';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -8,7 +8,6 @@ const FB_APP_ID = '148707542402172';
 
 import { Container } from '../components/Container';
 import { Logo } from '../components/Logo';
-import { FaceBookButton } from '../components/Buttons';
 
 export default class Home extends Component {
     state = {
