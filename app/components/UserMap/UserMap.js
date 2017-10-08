@@ -17,11 +17,7 @@ import styles from './styles';
 import RecommendationsMap from './RecommendationsMap';
 import { OverlayTopics, BottomTopics } from './Topics';
 
-const CLIENT_ID = '4VMVDF0DJLP4DKSFNW210VFMEL1OJ3P5HAAQJGOC4YFYIOJ2';
-const CLIENT_SECRET = 'ZXA5FEE4GJY4S525PBWUDM22R3FTNTOHKQ0FMJNV0GGBTYBU';
-const FOURSQUARE_ENDPOINT = 'https://api.foursquare.com/v2/venues/explore';
-const API_DEBOUNCE_TIME = 2000;
-
+const OPENTABLE_URL = 'https://platform.otqa.com/sync/directory';
 class App extends Component {
     state = {
         mapRegion: null,
@@ -63,7 +59,7 @@ class App extends Component {
         if (!this.shouldFetchVenues(lookingFor)) return;
 
         const query = this.venuesQuery(region, lookingFor);
-
+        
         fetch(`${FOURSQUARE_ENDPOINT}?${query}`)
             .then(fetch.throwErrors)
             .then(res => res.json())
