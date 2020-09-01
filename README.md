@@ -5,3 +5,5 @@ The best solution was building a mobile app that helps groups solve this problem
 The majority of the front end was built using expo.io and react-native as it allowed us create robust mobile apps, and built the backend in express.js, which implemented a distant algorithm to select a restaurant that was within 10 miles of the current location of all members of the party, and then ranked the restaurants based on preferences and reviews.
 
 We built majority of the frontend using expo.io and react-native as it allowed us create robust mobile apps, and built the backend in express.js, which implemented a distant algorithm to select a restaurant that was within 10 miles of the current location of all members of the party, and then ranked the restaurants based on preferences and reviews. We were able to develop parts of the GUI and workflow of the app, as well as majority of the backend algorithms that would be used to rank the restaurants for the user. 
+
+In this repository you will find all the associated files used.
